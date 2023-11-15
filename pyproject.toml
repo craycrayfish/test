@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "my_awesome_pipeline"
+version = "0.0.0"
+description = "Behold my awesome pipeline!"
+authors = ["Jane Smith <janesmith@example.org>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+aineko = "0.2.3"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.1"
+pytest-cov = "^4.1.0"
+
+[tool.poetry.scripts]
+aineko = "aineko.__main__:_cli"
